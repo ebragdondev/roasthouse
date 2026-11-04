@@ -1,0 +1,10 @@
+# Optional example to run Cloudflare Pages + D1 locally.
+# Rename to wrangler.toml, substitute the database_id returned by `wrangler d1 create`.
+name = "roasthouse-phase7"
+compatibility_date = "2026-11-04"
+pages_build_output_dir = "./dist"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "roasthouse-saves"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"

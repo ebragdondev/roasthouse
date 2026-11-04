@@ -1,0 +1,21 @@
+{
+  "name": "roasthouse-next-chapter",
+  "private": true,
+  "version": "7.0.0",
+  "description": "Phase 7 original coffee-company simulation with six focused departments and Cloudflare D1 cloud accounts/saves",
+  "license": "UNLICENSED",
+  "scripts": {
+    "build": "node scripts/build.cjs",
+    "check": "tsc --noEmit --strict --target ES2022 --lib ES2022 src/customer-economy.ts",
+    "test": "node tests/phase7-simulation.cjs && node tests/cloud-api.cjs",
+    "verify": "npm run check && npm run test && npm run build",
+    "browser": "python tests/phase7_browser.py"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "type": "module"
+}

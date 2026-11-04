@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "none",
+    "strict": true,
+    "noEmit": true,
+    "lib": ["ES2022", "DOM"],
+    "skipLibCheck": true
+  },
+  "files": ["src/customer-economy.ts", "src/engine.ts", "src/ui.ts"]
+}
